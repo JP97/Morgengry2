@@ -6,25 +6,31 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    class Amulet
+    enum Level
+    {
+        low,
+        medium,
+        high
+    }
+    public class Amulet
     {
         private string _itemId;
-        private int _quality;
+        private Level _quality;
         private string _design;
 
 
         public string ItemId { get { return _itemId; } set { this._itemId = value; } }
         public string Design { get{ return _design; } set { this._design = value; } }
-        public int Quality { get { return _quality; } set { this._quality = value; } }
+        public Level Quality { get { return _quality; } set { this._quality = value; } }
 
 
-        public Amulet(string itemId, int quality, string design)
+        public Amulet(string itemId, Level quality, string design)
         {
             ItemId = itemId;
             Quality = quality;
             Design = design;
         }
-        public Amulet(string itemId, int quality) :
+        public Amulet(string itemId, Level quality) :
             this (itemId, quality, "Not supplied")
         {
             
@@ -36,6 +42,9 @@ namespace Morgengry
         }
         
         
-        
+       public override string ToString()
+        {
+            
+        }
     }
 }
