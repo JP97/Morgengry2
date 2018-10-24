@@ -8,6 +8,7 @@ namespace Morgengry
 {
     class Book
     {
+
         public Book(string itemId, string title, double price)
         {
 
