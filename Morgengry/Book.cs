@@ -24,7 +24,7 @@ namespace Morgengry
 
         }
         public Book(string itemId):
-            this(itemId, "not given", 0)
+            this(itemId, "", 0)
         {
 
         }
@@ -33,5 +33,11 @@ namespace Morgengry
         public string Title { get {return this.title; } set {this.title = value; } }
         public double Price { get {return this.price; } set {this.price = value; } }
 
+
+        public override string ToString()
+        {
+            string id = "ItemId: " + itemId+ "," + " Title: " + title + "," + " Price: " + price; 
+            return id;
+        }
     }
 }
