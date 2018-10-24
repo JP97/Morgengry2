@@ -10,6 +10,7 @@ namespace Morgengry
     {
         static void Main(string[] args)
         {
+            Book b = new Book("bog", "title", 5.5);
         }
     }
 }

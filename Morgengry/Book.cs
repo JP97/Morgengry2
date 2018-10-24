@@ -8,7 +8,7 @@ namespace Morgengry
 {
     class Book
     {
-        private string itemID;
+        private string itemId;
         private string title;
         private double price;
         //jkrgberg
@@ -29,9 +29,9 @@ namespace Morgengry
 
         }
 
-        public string ItemId { get; set; }
-        public string Title { get; set; }
-        public double Price { get; set; }
+        public string ItemId { get {return this.itemId; } set {this.itemId = ItemId ; } }
+        public string Title { get {return this.title; } set {this.title = Title; } }
+        public double Price { get {return this.price; } set {this.price = Price; } }
 
     }
 }
