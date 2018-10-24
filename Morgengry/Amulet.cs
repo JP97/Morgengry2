@@ -8,20 +8,34 @@ namespace Morgengry
 {
     class Amulet
     {
-        public Amulet(int itemId)
-        {
+        private string _itemId;
+        private int _quality;
+        private string _design;
 
-        }
-        public Amulet(int itemId, int quality)
-        {
 
-        }
-        public Amulet(int itemId, int quality, string design)
-        {
+        public string ItemId { get { return _itemId; } set { this._itemId = value; } }
+        public string Design { get{ return _design; } set { this._design = value; } }
+        public int Quality { get { return _quality; } set { this._quality = value; } }
 
+
+        public Amulet(string itemId, int quality, string design)
+        {
+            ItemId = itemId;
+            Quality = quality;
+            Design = design;
         }
-        public string ItemId { get; set; }
-        public string Design { get; set; }
-        public int Quality { get; set; }
+        public Amulet(string itemId, int quality) :
+            this (itemId, quality, "Not supplied")
+        {
+            
+        }
+        public Amulet(string itemId) 
+            : this (itemId, 0 ,"Not Supplied")
+        {
+            
+        }
+        
+        
+        
     }
 }
