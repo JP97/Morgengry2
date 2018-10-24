@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    enum Level
+    public enum Level
     {
         low,
         medium,
@@ -41,10 +41,9 @@ namespace Morgengry
             
         }
         
-        
        public override string ToString()
         {
-            
+            return "";
         }
     }
 }
