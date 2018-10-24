@@ -8,8 +8,23 @@ namespace Morgengry
 {
     class Book
     {
+        private string itemID;
+        private string title;
+        private double price;
         //jkrgberg
         public Book(string itemId, string title, double price)
+        {
+            ItemId = itemId;
+            Title = title;
+            Price = price;
+        }
+        public Book(string itemId, string title): 
+            this(itemId, title, 0)
+        {
+
+        }
+        public Book(string itemId):
+            this(itemId, "not given", 0)
         {
 
         }
