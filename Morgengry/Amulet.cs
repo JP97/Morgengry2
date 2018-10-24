@@ -8,5 +8,11 @@ namespace Morgengry
 {
     class Amulet
     {
+        public Amulet(int itemId, int quality, string design)
+        {
+
+        }
+        public double ItemId { get; set; }
+        public 
     }
 }
