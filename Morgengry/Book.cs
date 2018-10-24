@@ -29,9 +29,9 @@ namespace Morgengry
 
         }
 
-        public string ItemId { get {return this.itemId; } set {this.itemId = ItemId ; } }
-        public string Title { get {return this.title; } set {this.title = Title; } }
-        public double Price { get {return this.price; } set {this.price = Price; } }
+        public string ItemId { get {return this.itemId; } set {this.itemId = value ; } }
+        public string Title { get {return this.title; } set {this.title = value; } }
+        public double Price { get {return this.price; } set {this.price = value; } }
 
     }
 }
