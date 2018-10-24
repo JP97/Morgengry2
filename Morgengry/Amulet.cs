@@ -8,5 +8,6 @@ namespace Morgengry
 {
     class Amulet
     {
+        
     }
 }
