@@ -8,6 +8,9 @@ namespace Morgengry
 {
     class Amulet
     {
-        
+        public Amulet(string itemId, int quality, string design)
+        {
+
+        }
     }
 }
