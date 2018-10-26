@@ -12,7 +12,7 @@ namespace Morgengry
         private string title;
         private double price;
         //jkrgberg
-        public Book(string itemId, string title, double price)
+        public Book(string itemId, string title, double price) : base(itemId)
         {
             ItemId = itemId;
             Title = title;
