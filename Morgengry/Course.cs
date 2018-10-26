@@ -21,6 +21,8 @@ namespace Morgengry
         {
             
         }
+        
+        //test kommentar
 
         public string Name { get {return name; } set {this.name = value; } }
         public int DurationInMinutes { get {return this.durationInMinutes; } set {this.durationInMinutes = value; } }
