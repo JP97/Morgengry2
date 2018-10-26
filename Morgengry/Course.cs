@@ -9,23 +9,28 @@ namespace Morgengry
     public class Course
     {
         private string name;
-        private int durationinMinutes;
+        private int durationInMinutes;
 
         public Course(string name, int duration)
         {
             Name = name;
             DurationInMinutes = duration;
         }
+
         public Course(string name) : this (name, 0)
         {
+            
         }
+        
+        //test kommentar
+
         public string Name { get {return name; } set {this.name = value; } }
-        public int DurationInMinutes { get {return this.durationinMinutes; } set {this.durationinMinutes = value; } }
+        public int DurationInMinutes { get {return this.durationInMinutes; } set {this.durationInMinutes = value; } }
 
 
         public override string ToString()
         {
-            string str = "Name: " + name + ", " + "Duration in Minutes: " + durationinMinutes;
+            string str = "Name: " + name + ", " + "Duration in Minutes: " + durationInMinutes;
             return str;
         }
     }
