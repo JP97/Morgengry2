@@ -8,7 +8,6 @@ namespace Morgengry
 {
     public enum Level
     {
-        
         low,
         medium,
         high
@@ -36,16 +35,19 @@ namespace Morgengry
         {
             
         }
-        public Amulet(string itemId) 
-            : this (itemId, Level.medium ,"")
+        public Amulet(string itemId) :
+            this(itemId, Level.medium, "")
         {
-            
+
         }
-        
+
+
+
 
         public override string ToString()
         {
-            return "ItemId: " + _itemId + ", " + "Quality: " + _quality + ", " + "Design: " + _design;
+            string id = "ItemId: " + _itemId + "," + " Quality: " + _quality + "," + " Design: " + _design;
+            return id;
         }
     }
 }
