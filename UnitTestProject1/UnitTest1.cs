@@ -38,12 +38,12 @@ namespace UnitTestProject1
             Assert.AreEqual("ItemId: 13, Quality: low, Design: Capricorn", a13.ToString());
         }
 
-        [TestMethod]
-        public void AllMerchandiseConstructorsWorkProperly()
-        {
-            Merchandise m = new Merchandise("100");
-            Assert.AreEqual("ItemId: 100", m.ToString());
-        }
+        //[TestMethod]
+        //public void AllMerchandiseConstructorsWorkProperly()
+        //{
+        //    Merchandise m = new Merchandise("100");
+        //    Assert.AreEqual("ItemId: 100", m.ToString());
+        //}
 
     }
 

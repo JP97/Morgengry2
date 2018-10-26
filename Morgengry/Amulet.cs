@@ -24,7 +24,7 @@ namespace Morgengry
         public Level Quality { get { return _quality; } set { this._quality = value; } }
 
 
-        public Amulet(string itemId, Level quality, string design) : base(itemId)
+        public Amulet(string itemId, Level quality, string design)
         {
             ItemId = itemId;
             Quality = quality;
