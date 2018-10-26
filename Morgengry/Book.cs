@@ -11,7 +11,6 @@ namespace Morgengry
         private string itemId;
         private string title;
         private double price;
-        //jkrgberg
         public Book(string itemId, string title, double price)
         {
             ItemId = itemId;
@@ -24,7 +23,7 @@ namespace Morgengry
 
         }
         public Book(string itemId):
-            this(itemId, "not given", 0)
+            this(itemId, "", 0)
         {
 
         }
@@ -32,6 +31,11 @@ namespace Morgengry
         public string ItemId { get {return this.itemId; } set {this.itemId = value ; } }
         public string Title { get {return this.title; } set {this.title = value; } }
         public double Price { get {return this.price; } set {this.price = value; } }
+
+        public override string ToString()
+        {
+            return "ItemId: " + itemId +", " + "Title: " + title + ", " + "Price: " + price;
+        }
 
     }
 }
