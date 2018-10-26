@@ -19,5 +19,12 @@ namespace Morgengry
 
         public string Name { get {return name; } set {this.name = value; } }
         public int DurationinMinutes { get {return this.durationinMinutes; } set {this.durationinMinutes = value; } }
+
+
+        public override string ToString()
+        {
+            string str = "Name: " + name + ", " + "Duration in Minutes: " + durationinMinutes;
+            return str;
+        }
     }
 }
