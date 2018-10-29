@@ -37,11 +37,14 @@ namespace Morgengry
         {
             double result = 0;
             double value = 875.0;
-            double hour1 = 157 / 60;
 
-
+            double hour1 = c.DurationInMinutes / 60;
+            
             int hour2 = 157 / 60;
-
+            if (c.DurationInMinutes == 0)
+            {
+                return 0.0;
+            }
             
             if(hour1 % hour2 != 0)
             {
