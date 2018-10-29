@@ -6,21 +6,43 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    class Utility
+    public class Utility
     {
 
-        public double GetValueOfBook(double book)
+        public static double GetValueOfBook(Book b)
         {
-            return book;
+            return b.Price;
         }
-        public double GetValueOfAmulet(double amulet)
+        public static double GetValueOfAmulet(Amulet a)
         {
+            double value = 0;
+            if (a.Quality == Level.high)
+            {
+                return value = 27.5;
+            }
 
+            else if (a.Quality == Level.low)
+            {
+                return value = 20.0;
+            }
+
+            else if(a.Quality == Level.medium)
+            {
+                return value = 12.5;
+            }
+
+            return value;
         }
-        public double GetValueOfCourse(double course)
+        public static double GetValueOfCourse(Course c)
         {
-            course = 875.00;
-            return course;
+            double value = 0;
+
+            int hour = 157 * 60;
+            hour = hour / 3600;
+
+            int a = c.DurationInMinutes ;
+            value = hour * a;
+            return value;
         }
     }
 }
