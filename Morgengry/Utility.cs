@@ -35,23 +35,24 @@ namespace Morgengry
         }
         public static double GetValueOfCourse(Course c)
         {
-            double result = 0;
+            double hour1 = c.DurationInMinutes / 60.0;
+            int hour2 = c.DurationInMinutes / 60;
             double value = 875.0;
+            double result = 0;
 
-            double hour1 = c.DurationInMinutes / 60;
-            
-            int hour2 = 157 / 60;
-            if (c.DurationInMinutes == 0)
+            if (c.DurationInMinutes > 0)
             {
-                return 0.0;
+                if (hour1 % hour2 == 0.0)
+                {
+                    return result = hour2 * value;
+                }
+                else
+                {
+                    return result = value * (hour2 + 1);
+                }
+                
             }
-            
-            if(hour1 % hour2 != 0)
-            {
-                result = (hour2 + 1) * value;
-            }
-
-
+          
             return result;
         }
     }
