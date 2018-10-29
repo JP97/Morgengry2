@@ -9,5 +9,20 @@ namespace Morgengry
     class AmuletRepository
     {
         private List<Amulet> amulets = new List<Amulet>();
+
+        public void AddAmulet(Amulet a)
+        {
+            amulets.Add(a);
+        }
+
+        public Amulet GetAmulet(string itemId)
+        {
+
+        }
+
+        public double GetTotalValue()
+        {
+            
+        }
     }
 }
