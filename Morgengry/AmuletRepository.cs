@@ -17,12 +17,12 @@ namespace Morgengry
 
         public Amulet GetAmulet(string itemId)
         {
-
+            throw new NotImplementedException();
         }
 
         public double GetTotalValue()
         {
-            
+            throw new NotImplementedException();
         }
     }
 }

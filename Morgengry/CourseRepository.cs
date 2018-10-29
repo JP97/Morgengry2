@@ -22,7 +22,7 @@ namespace Morgengry
 
         public Course GetCourse(string name)
         {
-
+            throw new NotImplementedException();
         }
     }
 }

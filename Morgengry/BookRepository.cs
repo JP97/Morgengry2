@@ -17,11 +17,11 @@ namespace Morgengry
         }
         public Book GetBook(string itemId)
         {
-
+            throw new NotImplementedException();
         }
         public double GetTotalValue()
         {
-
+            throw new NotImplementedException();
         }
 
     }
