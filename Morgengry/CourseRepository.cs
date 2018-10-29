@@ -10,5 +10,19 @@ namespace Morgengry
     {
         private List<Course> courses = new List<Course>();
 
+        public void AddCourse(Course c)
+        {
+            throw new NotImplementedException();
+        }
+
+        public double GetTotalValue()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Course GetCourse(string name)
+        {
+
+        }
     }
 }
