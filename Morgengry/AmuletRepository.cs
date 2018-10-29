@@ -19,10 +19,16 @@ namespace Morgengry
         {
             throw new NotImplementedException();
         }
-
+        
         public double GetTotalValue()
         {
-            throw new NotImplementedException();
+            double result = 0;
+            foreach (Amulet item in amulets)
+            {
+                result = result + Utility.GetValueOfAmulet(item);
+            }
+
+            return result;
         }
     }
 }
