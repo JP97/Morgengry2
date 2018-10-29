@@ -17,12 +17,25 @@ namespace Morgengry
 
         public Amulet GetAmulet(string itemId)
         {
-            throw new NotImplementedException();
+            for(int i = 0; i < amulets.Count; i++)
+            {
+                if(amulets[i].ItemId == itemId)
+                {
+                    return amulets[i];
+                }
+            }
+            return null;
         }
 
         public double GetTotalValue()
         {
-            throw new NotImplementedException();
+            double result = 0;
+
+            foreach(Amulet a in amulets)
+            {
+                result = result + Utility.GetValueOfAmulet(a);
+            }
+            return result;
         }
     }
 }

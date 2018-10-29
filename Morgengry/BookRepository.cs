@@ -17,11 +17,26 @@ namespace Morgengry
         }
         public Book GetBook(string itemId)
         {
-            throw new NotImplementedException();
+            for(int i = 0; i < books.Count; i++)
+            {
+                if(books[i].ItemId == itemId)
+                {
+                    return books[i];
+                }
+            }
+            return null;
+            
         }
         public double GetTotalValue()
         {
-            throw new NotImplementedException();
+            double result = 0;
+
+            foreach(Book b in books)
+            {
+                result = result + Utility.GetValueOfBook(b);
+            }
+
+            return result;
         }
 
     }

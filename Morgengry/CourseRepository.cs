@@ -12,17 +12,29 @@ namespace Morgengry
 
         public void AddCourse(Course c)
         {
-            throw new NotImplementedException();
+            courses.Add(c);
         }
 
         public double GetTotalValue()
         {
-            throw new NotImplementedException();
+            double result = 0;
+            foreach(Course c in courses)
+            {
+                result = result + Utility.GetValueOfCourse(c);
+            }
+            return result;
         }
 
         public Course GetCourse(string name)
         {
-            throw new NotImplementedException();
+           for(int i = 0; i < courses.Count; i++)
+            {
+                if(courses[i].Name == name)
+                {
+                    return courses[i];
+                }
+            }
+            return null;
         }
     }
 }
