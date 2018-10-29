@@ -10,5 +10,19 @@ namespace Morgengry
     {
         private List<Amulet> amulets = new List<Amulet>();
 
+        public void AddAmulet(Amulet a)
+        {
+            amulets.Add(a);
+        }
+
+        public Amulet GetAmulet(string itemId)
+        {
+
+        }
+
+        public double GetTotalValue()
+        {
+            
+        }
     }
 }
