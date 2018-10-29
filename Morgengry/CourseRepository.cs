@@ -9,5 +9,6 @@ namespace Morgengry
     class CourseRepository
     {
         private List<Course> courses = new List<Course>();
+
     }
 }

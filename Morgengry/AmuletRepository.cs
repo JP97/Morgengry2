@@ -9,5 +9,6 @@ namespace Morgengry
     class AmuletRepository
     {
         private List<Amulet> amulets = new List<Amulet>();
+
     }
 }
