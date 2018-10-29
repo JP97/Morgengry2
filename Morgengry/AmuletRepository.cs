@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    class AmuletRepository
+    public class AmuletRepository
     {
         private List<Amulet> amulets = new List<Amulet>();
 
