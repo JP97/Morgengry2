@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morgengry", "Morgengry\Morg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{E87ECD7C-36BE-4DF9-8647-62DE82C98048}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest2", "UnitTest2\UnitTest2.csproj", "{B235CBE5-38DE-4B73-A1C2-A34E403531A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E87ECD7C-36BE-4DF9-8647-62DE82C98048}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E87ECD7C-36BE-4DF9-8647-62DE82C98048}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E87ECD7C-36BE-4DF9-8647-62DE82C98048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B235CBE5-38DE-4B73-A1C2-A34E403531A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B235CBE5-38DE-4B73-A1C2-A34E403531A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B235CBE5-38DE-4B73-A1C2-A34E403531A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B235CBE5-38DE-4B73-A1C2-A34E403531A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
