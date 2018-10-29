@@ -23,26 +23,33 @@ namespace Morgengry
 
             else if (a.Quality == Level.low)
             {
-                return value = 20.0;
+                return value = 12.5;
             }
 
             else if(a.Quality == Level.medium)
             {
-                return value = 12.5;
+                return value = 20.0;
             }
 
             return value;
         }
         public static double GetValueOfCourse(Course c)
         {
-            double value = 0;
+            double result = 0;
+            double value = 875.0;
+            double hour1 = 157 / 60;
 
-            int hour = 157 * 60;
-            hour = hour / 3600;
 
-            int a = c.DurationInMinutes ;
-            value = hour * a;
-            return value;
+            int hour2 = 157 / 60;
+
+            
+            if(hour1 % hour2 != 0)
+            {
+                result = (hour2 + 1) * value;
+            }
+
+
+            return result;
         }
     }
 }
