@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    class BookRepository
+    public class BookRepository
     {
         
         private List<Book> books = new List<Book>();
