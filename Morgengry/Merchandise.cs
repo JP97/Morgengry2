@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    public abstract class Merchandise
+    public abstract class Merchandise : IValuable
     {
         private string itemId;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morgengry
 {
-    public class Course
+    public class Course : IValuable
     {
         private string name;
         private int durationInMinutes;
@@ -33,5 +33,30 @@ namespace Morgengry
             string str = "Name: " + name + ", " + "Duration in Minutes: " + durationInMinutes;
             return str;
         }
+
+        public double GetValue()
+        {
+            double hour1 = DurationInMinutes / 60.0;
+            int hour2 = DurationInMinutes / 60;
+            double value = 875.0;
+            double result = 0;
+
+            if (DurationInMinutes > 0)
+            {
+                if (hour1 % hour2 == 0.0)
+                {
+                    return result = hour2 * value;
+                }
+                else
+                {
+                    return result = value * (hour2 + 1);
+                }
+
+            }
+
+            return result;
+        }
+
+     
     }
 }
