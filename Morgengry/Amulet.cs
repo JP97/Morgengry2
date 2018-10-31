@@ -41,13 +41,12 @@ namespace Morgengry
 
         }
 
-
-
-
         public override string ToString()
         {
             string id = "ItemId: " + _itemId + "," + " Quality: " + _quality + "," + " Design: " + _design;
             return id;
         }
+
+   
     }
 }
