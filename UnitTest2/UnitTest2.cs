@@ -10,13 +10,12 @@ namespace UnitTest2
         Book b1, b2, b3;
         Amulet a11, a12, a13;
         Course c111, c112;
-        
+        Merchandise m;
 
         CourseRepository courses = new CourseRepository();
-        //BookRepository books = new BookRepository();
-        //AmuletRepository amulets = new AmuletRepository();
+        BookRepository books = new BookRepository();
+        AmuletRepository amulets = new AmuletRepository();
         MerchandiseRepository merchandiseRepo = new MerchandiseRepository();
-
 
 
         [TestInitialize]

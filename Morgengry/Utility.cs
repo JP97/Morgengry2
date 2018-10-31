@@ -8,62 +8,40 @@ namespace Morgengry
 {
     public class Utility
     {
-        public static double GetValueOfMerchandise(Merchandise merchandise)
+        public double LowQualityValue { get; set; }
+        public double MediumQualityValue { get; set; }
+        public double HighQualityValue { get; set; }
+        public double CourseHourValue { get; set; }
+
+        public static double GetValueOfMerchandise(Merchandise m1)
         {
             double result = 0;
-            if(merchandise is Book)
+            if (m1 is Book b)
             {
-                Book book = (merchandise as Book);
-                result = book.Price;
+                result = b.Price;
             }
-
-            else if(merchandise is Amulet)
+            else if (m1 is Amulet a)
             {
-                Amulet amulet = (merchandise as Amulet);
-
-                if (amulet.Quality == Level.high)
+                double value = 0;
+                if (a.Quality == Level.high)
                 {
-                    result = 27.5;
+                    return value = 27.5;
                 }
 
-                else if (amulet.Quality == Level.low)
+                else if (a.Quality == Level.low)
                 {
-                    result = 12.5;
+                    return value = 12.5;
                 }
 
-                else if (amulet.Quality == Level.medium)
+                else if (a.Quality == Level.medium)
                 {
-                    result = 20.0;
+                    return value = 20.0;
                 }
 
+                return value;
             }
-
             return result;
         }
-        //public static double GetValueOfBook(Book b)
-        //{
-        //    return b.Price;
-        //}
-        //public static double GetValueOfAmulet(Amulet a)
-        //{
-        //    double value = 0;
-        //    if (a.Quality == Level.high)
-        //    {
-        //        return value = 27.5;
-        //    }
-
-        //    else if (a.Quality == Level.low)
-        //    {
-        //        return value = 12.5;
-        //    }
-
-        //    else if(a.Quality == Level.medium)
-        //    {
-        //        return value = 20.0;
-        //    }
-
-        //    return value;
-        //}
         public static double GetValueOfCourse(Course c)
         {
             double hour1 = c.DurationInMinutes / 60.0;
