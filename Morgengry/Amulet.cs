@@ -12,6 +12,7 @@ namespace Morgengry
         medium,
         high
     }
+    
     public class Amulet : Merchandise
     {
         private string _itemId;

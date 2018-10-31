@@ -10,8 +10,10 @@ namespace Morgengry
     {
         private string itemId;
 
+        public double GetValue() {
+            return Utility.GetValueOfMerchandise(this);
+        }
         
-
         //public Merchandise(string itemId)
         //{
         //    ItemId = itemId;
