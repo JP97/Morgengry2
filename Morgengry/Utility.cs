@@ -8,10 +8,15 @@ namespace Morgengry
 {
     public class Utility
     {
-        public double LowQualityValue { get; set; }
-        public double MediumQualityValue { get; set; }
-        public double HighQualityValue { get; set; }
-        public double CourseHourValue { get; set; }
+        private double lowQualityValue;
+        private double mediumQualityValue;
+        private double highQualityValue;
+        private double courseHourValue;
+
+        public double LowQualityValue { get {return this.lowQualityValue; } set {this.lowQualityValue = value; } }
+        public double MediumQualityValue { get {return this.mediumQualityValue; } set {this.mediumQualityValue = value; } }
+        public double HighQualityValue { get {return this.highQualityValue; } set {this.highQualityValue = value; } }
+        public double CourseHourValue { get { return this.courseHourValue; } set { this.courseHourValue = value; } }
 
         public static double GetValueOfMerchandise(Merchandise m1)
         {
