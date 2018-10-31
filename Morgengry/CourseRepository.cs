@@ -18,21 +18,20 @@ namespace Morgengry
         public double GetTotalValue()
         {
             double result = 0;
-            foreach (Course item in courses)
+            foreach(Course c in courses)
             {
-                result = result + Utility.GetValueOfCourse(item);
+                result = result + Utility.GetValueOfCourse(c);
             }
-
             return result;
         }
 
         public Course GetCourse(string name)
         {
-            foreach (Course item in courses)
+           for(int i = 0; i < courses.Count; i++)
             {
-                if (item.Name == name)
+                if(courses[i].Name == name)
                 {
-                    return item;
+                    return courses[i];
                 }
             }
             return null;

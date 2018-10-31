@@ -17,11 +17,11 @@ namespace Morgengry
 
         public Amulet GetAmulet(string itemId)
         {
-            foreach (Amulet item in amulets)
+            for(int i = 0; i < amulets.Count; i++)
             {
-                if (item.ItemId == itemId)
+                if(amulets[i].ItemId == itemId)
                 {
-                    return item;
+                    return amulets[i];
                 }
             }
             return null;
@@ -30,11 +30,11 @@ namespace Morgengry
         public double GetTotalValue()
         {
             double result = 0;
-            foreach (Amulet item in amulets)
-            {
-                result = result + Utility.GetValueOfAmulet(item);
-            }
 
+            foreach(Amulet a in amulets)
+            {
+                result = result + Utility.GetValueOfAmulet(a);
+            }
             return result;
         }
     }

@@ -17,22 +17,25 @@ namespace Morgengry
         }
         public Book GetBook(string itemId)
         {
-            foreach (Book b in books)
+            for(int i = 0; i < books.Count; i++)
             {
-                if (b.ItemId == itemId)
+                if(books[i].ItemId == itemId)
                 {
-                    return b;
+                    return books[i];
                 }
             }
             return null;
+            
         }
         public double GetTotalValue()
         {
             double result = 0;
-            foreach  (Book b in books)
+
+            foreach(Book b in books)
             {
-                result = result + b.Price;
+                result = result + Utility.GetValueOfBook(b);
             }
+
             return result;
         }
 
