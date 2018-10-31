@@ -28,7 +28,14 @@ namespace Morgengry
 
         public Course GetCourse(string name)
         {
-            throw new NotImplementedException();
+            foreach (Course item in courses)
+            {
+                if (item.Name == name)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
     }
 }

@@ -10,6 +10,7 @@ namespace Morgengry
     {
         private string itemId;
 
+        
 
         //public Merchandise(string itemId)
         //{

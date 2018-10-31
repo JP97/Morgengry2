@@ -19,7 +19,7 @@ namespace Morgengry
         {
             foreach (Book b in books)
             {
-                if (b.ItemId == "itemID")
+                if (b.ItemId == itemId)
                 {
                     return b;
                 }
