@@ -8,7 +8,7 @@ namespace Morgengry
 {
     public class Book : Merchandise
     {
-        private string itemId;
+        //private string itemId;
         private string title;
         private double price;
         //jkrgberg
@@ -29,14 +29,14 @@ namespace Morgengry
 
         }
 
-        public string ItemId { get {return this.itemId; } set {this.itemId = value ; } }
+        //public string ItemId { get {return this.itemId; } set {this.itemId = value ; } }
         public string Title { get {return this.title; } set {this.title = value; } }
         public double Price { get {return this.price; } set {this.price = value; } }
 
 
         public override string ToString()
         {
-            string id = "ItemId: " + itemId+ "," + " Title: " + title + "," + " Price: " + price; 
+            string id = "ItemId: " + ItemId+ "," + " Title: " + Title + "," + " Price: " + Price; 
             return id;
         }
     }

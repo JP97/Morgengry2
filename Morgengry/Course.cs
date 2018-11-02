@@ -10,6 +10,7 @@ namespace Morgengry
     {
         private string name;
         private int durationInMinutes;
+        private double courseHourValue = 825.0;
 
         public Course(string name, int duration)
         {
@@ -26,11 +27,12 @@ namespace Morgengry
 
         public string Name { get {return name; } set {this.name = value; } }
         public int DurationInMinutes { get {return this.durationInMinutes; } set {this.durationInMinutes = value; } }
+        public double CourseHourValue { get {return this.courseHourValue; } set {this.courseHourValue = value; } }
 
 
         public override string ToString()
         {
-            string str = "Name: " + name + ", " + "Duration in Minutes: " + durationInMinutes;
+            string str = "Name: " + name + ", " + "Duration in Minutes: " + durationInMinutes + ", " + "Pris pr påbegyndt time: " + CourseHourValue;
             return str;
         }
 
@@ -38,7 +40,7 @@ namespace Morgengry
         {
             double hour1 = DurationInMinutes / 60.0;
             int hour2 = DurationInMinutes / 60;
-            double value = 875.0;
+            double value =CourseHourValue;
             double result = 0;
 
             if (DurationInMinutes > 0)

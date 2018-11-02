@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8193880D-D05E-4191-A2DE-239273E4C9C2}</ProjectGuid>
+    <ProjectGuid>{880DE2F5-7C38-44EE-97E9-299878D889EB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Morgengry</RootNamespace>
-    <AssemblyName>Morgengry</AssemblyName>
+    <RootNamespace>ValuableRepository</RootNamespace>
+    <AssemblyName>ValuableRepository</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,19 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Amulet.cs" />
-    <Compile Include="AmuletRepository.cs" />
-    <Compile Include="Book.cs" />
-    <Compile Include="BookRepository.cs" />
-    <Compile Include="Course.cs" />
-    <Compile Include="CourseRepository.cs" />
-    <Compile Include="IValuable.cs" />
-    <Compile Include="Merchandise.cs" />
-    <Compile Include="MerchandiseRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility.cs" />
-    <Compile Include="ValuableRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

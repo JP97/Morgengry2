@@ -19,7 +19,7 @@ namespace Morgengry
         //    ItemId = itemId;
         //}
 
-        public  string ItemId { get {return this.itemId; } set {this.itemId = value; } }
+        public string ItemId { get {return this.itemId; } set {this.itemId = value; } }
 
 
         public override string ToString()

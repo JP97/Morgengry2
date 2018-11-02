@@ -15,14 +15,20 @@ namespace Morgengry
     
     public class Amulet : Merchandise
     {
-        private string _itemId;
+        //private string _itemId;
         private Level _quality;
         private string _design;
+        private double lowQualityValue;
+        private double mediumQualityValue;
+        private double highQualityValue;
 
 
-        public string ItemId { get { return _itemId; } set { this._itemId = value; } }
+        //public string ItemId { get { return _itemId; } set { this._itemId = value; } }
         public string Design { get{ return _design; } set { this._design = value; } }
         public Level Quality { get { return _quality; } set { this._quality = value; } }
+        public double LowQualityValue { get { return this.lowQualityValue; } set { this.lowQualityValue = value; } }
+        public double MediumQualityValue { get { return this.mediumQualityValue; } set { this.mediumQualityValue = value; } }
+        public double HighQualityValue { get { return this.highQualityValue; } set { this.highQualityValue = value; } }
 
 
         public Amulet(string itemId, Level quality, string design)
@@ -44,7 +50,7 @@ namespace Morgengry
 
         public override string ToString()
         {
-            string id = "ItemId: " + _itemId + "," + " Quality: " + _quality + "," + " Design: " + _design;
+            string id = "ItemId: " + ItemId + "," + " Quality: " + Quality + "," + " Design: " + Design;
             return id;
         }
 
